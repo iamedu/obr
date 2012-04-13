@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120413100145.782' name='justcloud'>
+<repository lastmodified='20120413183330.615' name='Untitled'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -744,6 +744,48 @@
     </require>
     <require extend='false' filter='(|(ee=J2SE-1.5))' multiple='false' name='ee' optional='false'>
       Execution Environment (|(ee=J2SE-1.5))
+    </require>
+  </resource>
+  <resource id='com.justcloud.model.api/0.1.0' presentationname='com.justcloud.model.api' symbolicname='com.justcloud.model.api' uri='model-api-0.1.0.jar' version='0.1.0'>
+    <size>
+      1877
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='com.justcloud.model.api'/>
+      <p n='symbolicname' v='com.justcloud.model.api'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.justcloud.model.domain'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.justcloud.model.dao'/>
+      <p n='uses' v='com.justcloud.model.domain'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+  </resource>
+  <resource id='com.justcloud.searchable.model.api/0.1.0' presentationname='com.justcloud.searchable.model.api' symbolicname='com.justcloud.searchable.model.api' uri='searchable-model-api-0.1.0.jar' version='0.1.0'>
+    <size>
+      1654
+    </size>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='com.justcloud.searchable.model.api'/>
+      <p n='symbolicname' v='com.justcloud.searchable.model.api'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='com.justcloud.model.searchable.dao'/>
+      <p n='uses' v='com.justcloud.model.dao,com.justcloud.model.domain'/>
+      <p n='version' t='version' v='0.1.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=com.justcloud.model.dao)(version&gt;=0.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package com.justcloud.model.dao ;version=[0.1.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=com.justcloud.model.domain)(version&gt;=0.1.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
+      Import package com.justcloud.model.domain ;version=[0.1.0,2.0.0)
     </require>
   </resource>
   <resource id='com.springsource.org.aopalliance/1.0.0' presentationname='AOP Alliance API' symbolicname='com.springsource.org.aopalliance' uri='com.springsource.org.aopalliance-1.0.0.jar' version='1.0.0'>
