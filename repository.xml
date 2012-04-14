@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120414122651.303' name='Untitled'>
+<repository lastmodified='20120414163703.107' name='Untitled'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -1436,7 +1436,7 @@
   </resource>
   <resource id='hibernate-core/4.1.2' presentationname='hibernate-core' symbolicname='hibernate-core' uri='hibernate-core-4.1.2.jar' version='4.1.2'>
     <size>
-      4457655
+      4457923
     </size>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
@@ -1446,7 +1446,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.collection'/>
-      <p n='uses' v='org.hibernate.loader,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect,org.hibernate,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.internal.util.collections'/>
+      <p n='uses' v='org.hibernate.loader,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.sql,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.internal.util.collections'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1456,7 +1456,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.internal.util'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal,org.hibernate.cfg,org.jboss.logging,org.hibernate.bytecode.instrumentation.spi,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.property,org.hibernate.dialect,org.hibernate.internal.util.collections'/>
+      <p n='uses' v='org.hibernate,org.hibernate.internal,org.hibernate.cfg,org.jboss.logging,org.hibernate.bytecode.instrumentation.spi,org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.property,org.hibernate.dialect,org.hibernate.internal.util.collections'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1466,7 +1466,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.dialect.function'/>
-      <p n='uses' v='org.hibernate,org.hibernate.type,org.hibernate.dialect,org.hibernate.internal,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.type,org.hibernate.dialect,org.hibernate.internal,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1476,22 +1476,22 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.criteria'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.type,org.hibernate.loader,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.internal,org.hibernate.sql,org.hibernate.transform,org.hibernate.dialect,org.hibernate.hql.internal,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.criterion'/>
+      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.loader,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.internal,org.hibernate.sql,org.hibernate.transform,org.hibernate.dialect,org.hibernate.hql.internal,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.criterion'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.id.uuid'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.id'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.internal.util,org.hibernate.id'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.collection.internal'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.collection.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.persister.collection,org.hibernate.engine.internal,org.hibernate.loader,org.hibernate.internal,org.jboss.logging,org.dom4j,org.hibernate.id'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.collection.spi,org.hibernate.engine.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.persister.collection,org.hibernate.engine.internal,org.hibernate.loader,org.hibernate.internal,org.jboss.logging,org.dom4j,org.hibernate.id'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.hbm'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate,org.hibernate.metamodel.source,org.hibernate.internal.jaxb.mapping.hbm,org.hibernate.metamodel.source.binder,org.hibernate.internal.jaxb,org.hibernate.metamodel.binding,org.hibernate.engine,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.metamodel.relational,org.hibernate.mapping,org.hibernate.metamodel,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.type,org.hibernate.metamodel.domain,org.hibernate.metamodel.source.internal'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate,org.hibernate.metamodel.source,org.hibernate.internal.jaxb.mapping.hbm,org.hibernate.metamodel.source.binder,org.hibernate.internal.jaxb,org.hibernate.metamodel.binding,org.hibernate.engine,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.engine.spi,org.hibernate.metamodel.relational,org.hibernate.mapping,org.hibernate.metamodel,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.type,org.hibernate.metamodel.domain,org.hibernate.metamodel.source.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1506,7 +1506,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.internal'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.transform,org.hibernate.type,org.hibernate.proxy,org.hibernate.engine.query.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.property,org.hibernate.loader,org.hibernate.engine.jdbc.spi,org.hibernate.hql.internal,org.hibernate.engine.loading.internal,org.jboss.logging,org.hibernate.jdbc,org.hibernate.engine.jdbc,org.hibernate.service.jdbc.connections.spi,org.hibernate.loader.custom.sql,org.hibernate.engine.query.spi.sql,org.hibernate.cfg,org.hibernate.service,org.hibernate.loader.custom,org.hibernate.engine.transaction.spi,org.hibernate.service.spi,org.hibernate.cache.spi,org.hibernate.stat.spi,org.hibernate.stat,javax.naming,org.hibernate.id,org.hibernate.service.jdbc.dialect.internal,org.hibernate.service.jndi,org.hibernate.dialect,javax.transaction,org.hibernate.cache,org.hibernate.criterion,org.hibernate.sql,org.hibernate.dialect.function,org.hibernate.engine,org.hibernate.event.spi,org.hibernate.engine.internal,org.hibernate.integrator.spi,org.hibernate.metamodel.source,org.hibernate.pretty,org.hibernate.cache.spi.access,org.hibernate.persister.collection,org.hibernate.engine.transaction.internal,org.hibernate.metamodel.domain,org.hibernate.exception.spi,org.hibernate.persister.spi,org.hibernate.metamodel.binding,org.hibernate.id.factory.spi,org.hibernate.metadata,org.hibernate.context.spi,org.hibernate.service.config.spi,org.hibernate.cache.internal,org.hibernate.service.jta.platform.spi,org.hibernate.tuple.entity,org.hibernate.engine.profile,org.hibernate.service.classloading.spi,org.hibernate.service.jndi.spi,org.hibernate.context.internal,org.hibernate.mapping,org.hibernate.service.internal,org.hibernate.id.factory,org.hibernate.tool.hbm2ddl,javax.naming.event,javax.naming.spi,org.hibernate.loader.criteria,org.hibernate.collection.spi,org.hibernate.event.service.spi,org.hibernate.stat.internal,org.hibernate.usertype'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.transform,org.hibernate.type,org.hibernate.proxy,org.hibernate.engine.spi,org.hibernate.engine.query.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.property,org.hibernate.loader,org.hibernate.engine.jdbc.spi,org.hibernate.hql.internal,org.hibernate.engine.loading.internal,org.jboss.logging,org.hibernate.jdbc,org.hibernate.engine.jdbc,org.hibernate.service.jdbc.connections.spi,org.hibernate.loader.custom.sql,org.hibernate.engine.query.spi.sql,org.hibernate.cfg,org.hibernate.service,org.hibernate.loader.custom,org.hibernate.engine.transaction.spi,org.hibernate.service.spi,org.hibernate.cache.spi,org.hibernate.stat.spi,org.hibernate.stat,javax.naming,org.hibernate.id,org.hibernate.service.jdbc.dialect.internal,org.hibernate.service.jndi,org.hibernate.dialect,javax.transaction,org.hibernate.cache,org.hibernate.criterion,org.hibernate.sql,org.hibernate.dialect.function,org.hibernate.engine,org.hibernate.event.spi,org.hibernate.engine.internal,org.hibernate.integrator.spi,org.hibernate.metamodel.source,org.hibernate.pretty,org.hibernate.cache.spi.access,org.hibernate.persister.collection,org.hibernate.engine.transaction.internal,org.hibernate.metamodel.domain,org.hibernate.exception.spi,org.hibernate.persister.spi,org.hibernate.metamodel.binding,org.hibernate.id.factory.spi,org.hibernate.metadata,org.hibernate.context.spi,org.hibernate.service.config.spi,org.hibernate.cache.internal,org.hibernate.service.jta.platform.spi,org.hibernate.tuple.entity,org.hibernate.engine.profile,org.hibernate.service.classloading.spi,org.hibernate.service.jndi.spi,org.hibernate.context.internal,org.hibernate.mapping,org.hibernate.service.internal,org.hibernate.id.factory,org.hibernate.tool.hbm2ddl,javax.naming.event,javax.naming.spi,org.hibernate.loader.criteria,org.hibernate.collection.spi,org.hibernate.event.service.spi,org.hibernate.stat.internal,org.hibernate.usertype'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1530,7 +1530,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.bytecode.instrumentation.internal.javassist'/>
-      <p n='uses' v='org.hibernate.proxy,org.hibernate.bytecode.instrumentation.spi,org.hibernate.bytecode.internal.javassist'/>
+      <p n='uses' v='org.hibernate.proxy,org.hibernate.bytecode.instrumentation.spi,org.hibernate.engine.spi,org.hibernate.bytecode.internal.javassist'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1539,7 +1539,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.binding'/>
-      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate.metamodel.source,org.hibernate.metamodel.relational,org.hibernate.engine,org.hibernate,org.hibernate.persister.collection,org.hibernate.mapping,org.hibernate.dialect,org.hibernate.id,org.hibernate.id.factory,org.hibernate.type,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.tuple.entity,org.hibernate.internal.util.collections,org.hibernate.metamodel.source.binder,org.dom4j'/>
+      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate.metamodel.source,org.hibernate.metamodel.relational,org.hibernate.engine.spi,org.hibernate.engine,org.hibernate,org.hibernate.persister.collection,org.hibernate.mapping,org.hibernate.dialect,org.hibernate.id,org.hibernate.id.factory,org.hibernate.type,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.tuple.entity,org.hibernate.internal.util.collections,org.hibernate.metamodel.source.binder,org.dom4j'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1584,12 +1584,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.transform'/>
-      <p n='uses' v='org.hibernate,org.hibernate.property,org.hibernate.internal.util.collections,org.hibernate.type,org.hibernate.internal,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate,org.hibernate.engine.spi,org.hibernate.property,org.hibernate.internal.util.collections,org.hibernate.type,org.hibernate.internal,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.tuple.component'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.tuple,org.hibernate,org.hibernate.property,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.bytecode.spi'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.mapping,org.hibernate.tuple,org.hibernate,org.hibernate.property,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.bytecode.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1599,52 +1599,52 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal.ast.exec'/>
-      <p n='uses' v='org.hibernate.internal,org.hibernate.engine.jdbc.spi,org.hibernate.persister.entity,org.hibernate.service.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.cfg,antlr.collections,antlr,org.hibernate.event.spi,org.hibernate.sql,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate,org.jboss.logging,org.hibernate.action.spi,org.hibernate.hql.internal.ast,org.hibernate.param,org.hibernate.hql.internal.ast.tree'/>
+      <p n='uses' v='org.hibernate.internal,org.hibernate.engine.jdbc.spi,org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate.service.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.cfg,antlr.collections,antlr,org.hibernate.event.spi,org.hibernate.sql,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate,org.jboss.logging,org.hibernate.action.spi,org.hibernate.hql.internal.ast,org.hibernate.param,org.hibernate.hql.internal.ast.tree'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.hql'/>
-      <p n='uses' v='org.hibernate.loader,org.hibernate.persister.entity,org.hibernate.stat.spi,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.type,org.hibernate.dialect,org.hibernate.hql.spi,org.hibernate.internal.util.collections,org.hibernate.hql.internal,org.hibernate.param,org.hibernate,org.hibernate.internal,org.hibernate.persister.collection,org.hibernate.stat,org.hibernate.hql.internal.ast.tree,org.hibernate.hql.internal.ast'/>
+      <p n='uses' v='org.hibernate.loader,org.hibernate.persister.entity,org.hibernate.stat.spi,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate.hql.spi,org.hibernate.internal.util.collections,org.hibernate.hql.internal,org.hibernate.param,org.hibernate,org.hibernate.internal,org.hibernate.persister.collection,org.hibernate.stat,org.hibernate.hql.internal.ast.tree,org.hibernate.hql.internal.ast'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.collection.spi'/>
-      <p n='uses' v='org.hibernate.loader,org.hibernate,org.hibernate.persister.collection,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.loader,org.hibernate.engine.spi,org.hibernate,org.hibernate.persister.collection,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.transaction.internal'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal,javax.transaction,org.jboss.logging,org.hibernate.engine.transaction.spi,org.hibernate.engine.transaction.synchronization.internal,org.hibernate.engine.transaction.internal.jta,org.hibernate.service.jta.platform.spi,org.hibernate.stat.spi,org.hibernate.engine.jdbc.spi,org.hibernate.internal.util.collections,org.hibernate.stat,org.hibernate.engine.transaction.synchronization.spi,org.hibernate.engine.jdbc.internal,org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.engine.transaction.internal.jdbc,org.hibernate.service'/>
+      <p n='uses' v='org.hibernate,org.hibernate.internal,javax.transaction,org.jboss.logging,org.hibernate.engine.transaction.spi,org.hibernate.engine.transaction.synchronization.internal,org.hibernate.engine.transaction.internal.jta,org.hibernate.service.jta.platform.spi,org.hibernate.stat.spi,org.hibernate.engine.jdbc.spi,org.hibernate.engine.spi,org.hibernate.internal.util.collections,org.hibernate.stat,org.hibernate.engine.transaction.synchronization.spi,org.hibernate.engine.jdbc.internal,org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.engine.transaction.internal.jdbc,org.hibernate.service'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.annotations.entity'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.internal.util,org.hibernate.metamodel.source.annotations.attribute,org.hibernate.metamodel.source,org.hibernate.metamodel.source.binder,javax.persistence,org.hibernate.cfg,org.hibernate,com.fasterxml.classmate.members,org.hibernate.metamodel.source.annotations,org.jboss.logging,org.jboss.jandex,org.hibernate.internal.jaxb,com.fasterxml.classmate,org.hibernate.metamodel.domain,org.hibernate.service,org.hibernate.engine,org.hibernate.cache.spi.access,org.hibernate.metamodel,org.hibernate.annotations,org.hibernate.metamodel.source.annotations.xml,org.hibernate.metamodel.binding'/>
+      <p n='uses' v='org.hibernate.mapping,org.hibernate.internal.util,org.hibernate.metamodel.source.annotations.attribute,org.hibernate.metamodel.source,org.hibernate.metamodel.source.binder,javax.persistence,org.hibernate.cfg,org.hibernate,com.fasterxml.classmate.members,org.hibernate.metamodel.source.annotations,org.jboss.logging,org.jboss.jandex,org.hibernate.internal.jaxb,com.fasterxml.classmate,org.hibernate.metamodel.domain,org.hibernate.service,org.hibernate.engine,org.hibernate.cache.spi.access,org.hibernate.metamodel,org.hibernate.engine.spi,org.hibernate.annotations,org.hibernate.metamodel.source.annotations.xml,org.hibernate.metamodel.binding'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metadata'/>
-      <p n='uses' v='org.hibernate,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.service.spi'/>
-      <p n='uses' v='org.hibernate.service,org.jboss.logging,org.hibernate,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.service.internal'/>
+      <p n='uses' v='org.hibernate.service,org.jboss.logging,org.hibernate,org.hibernate.engine.spi,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.service.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cache.spi'/>
-      <p n='uses' v='org.hibernate.internal.util.compare,org.hibernate.type,org.hibernate.cache.spi.access,org.hibernate.cache,org.hibernate,org.hibernate.internal,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.internal.util.collections,org.hibernate.transform,org.hibernate.service,org.hibernate.stat.spi,org.jboss.logging,org.hibernate.stat'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.internal.util.compare,org.hibernate.type,org.hibernate.cache.spi.access,org.hibernate.cache,org.hibernate,org.hibernate.internal,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.internal.util.collections,org.hibernate.transform,org.hibernate.service,org.hibernate.stat.spi,org.jboss.logging,org.hibernate.stat'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.context.spi'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal.util.compare,org.hibernate.context'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.internal.util.compare,org.hibernate.context'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.property'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal,org.hibernate.internal.util,org.jboss.logging,org.hibernate.mapping,org.hibernate.metamodel.binding'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.internal,org.hibernate.internal.util,org.jboss.logging,org.hibernate.mapping,org.hibernate.metamodel.binding'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1654,37 +1654,37 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.action.spi'/>
-      <p n='uses' v='org.hibernate'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.bytecode.instrumentation.internal'/>
-      <p n='uses' v='org.hibernate.bytecode.instrumentation.spi,org.hibernate.bytecode.instrumentation.internal.javassist'/>
+      <p n='uses' v='org.hibernate.bytecode.instrumentation.spi,org.hibernate.engine.spi,org.hibernate.bytecode.instrumentation.internal.javassist'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.dialect.lock'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.action.internal,org.hibernate.event.spi,org.hibernate.action.spi,org.hibernate.pretty,org.hibernate.cfg,org.hibernate.stat.spi,org.hibernate.sql,org.hibernate.engine.jdbc.spi,org.hibernate.type,org.hibernate.engine.transaction.spi,org.hibernate.dialect,org.hibernate.stat,org.hibernate.internal,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.engine.spi,org.hibernate.action.internal,org.hibernate.event.spi,org.hibernate.action.spi,org.hibernate.pretty,org.hibernate.cfg,org.hibernate.stat.spi,org.hibernate.sql,org.hibernate.engine.jdbc.spi,org.hibernate.type,org.hibernate.engine.transaction.spi,org.hibernate.dialect,org.hibernate.stat,org.hibernate.internal,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.proxy.dom4j'/>
-      <p n='uses' v='org.hibernate.proxy,org.dom4j,org.hibernate,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.proxy,org.hibernate.engine.spi,org.dom4j,org.hibernate,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.pretty'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.jdbc'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal,org.hibernate.engine.jdbc.spi,org.hibernate.exception,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate,org.hibernate.internal,org.hibernate.engine.jdbc.spi,org.hibernate.exception,org.hibernate.engine.spi,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel'/>
-      <p n='uses' v='org.hibernate.cfg,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.engine,org.hibernate,org.hibernate.metamodel.binding,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service,org.w3c.dom,org.xml.sax,org.hibernate.metamodel.source.internal,org.jboss.logging,org.hibernate.internal.jaxb,org.hibernate.proxy'/>
+      <p n='uses' v='org.hibernate.cfg,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.engine.spi,org.hibernate.engine,org.hibernate,org.hibernate.metamodel.binding,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service,org.w3c.dom,org.xml.sax,org.hibernate.metamodel.source.internal,org.jboss.logging,org.hibernate.internal.jaxb,org.hibernate.proxy'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1694,7 +1694,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.sql'/>
-      <p n='uses' v='org.hibernate,org.hibernate.internal.util,org.hibernate.internal.util.collections,org.hibernate.dialect,org.hibernate.type,org.hibernate.sql.ordering.antlr,org.hibernate.dialect.function'/>
+      <p n='uses' v='org.hibernate,org.hibernate.internal.util,org.hibernate.internal.util.collections,org.hibernate.dialect,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.sql.ordering.antlr,org.hibernate.dialect.function'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1704,7 +1704,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.type'/>
-      <p n='uses' v='org.hibernate,org.hibernate.cfg,org.hibernate.dialect,org.hibernate.metamodel.relational,org.hibernate.type.descriptor.java,org.hibernate.type.descriptor.sql,org.hibernate.type.descriptor,org.hibernate.engine.jdbc,org.hibernate.internal.util,org.dom4j,org.hibernate.internal.util.collections,org.hibernate.internal.util.compare,org.hibernate.persister.entity,org.hibernate.proxy,org.hibernate.engine.internal,org.hibernate.collection.spi,org.hibernate.persister.collection,org.hibernate.collection.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.usertype,org.hibernate.engine.loading.internal,org.hibernate.tuple.component,org.hibernate.tuple,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.classic,org.hibernate.bytecode.instrumentation.spi,org.hibernate.property'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.cfg,org.hibernate.dialect,org.hibernate.metamodel.relational,org.hibernate.type.descriptor.java,org.hibernate.type.descriptor.sql,org.hibernate.type.descriptor,org.hibernate.engine.jdbc,org.hibernate.internal.util,org.dom4j,org.hibernate.internal.util.collections,org.hibernate.internal.util.compare,org.hibernate.persister.entity,org.hibernate.proxy,org.hibernate.engine.internal,org.hibernate.collection.spi,org.hibernate.persister.collection,org.hibernate.collection.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.usertype,org.hibernate.engine.loading.internal,org.hibernate.tuple.component,org.hibernate.tuple,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.classic,org.hibernate.bytecode.instrumentation.spi,org.hibernate.property'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1714,12 +1714,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.custom'/>
-      <p n='uses' v='org.hibernate.loader,org.hibernate,org.hibernate.internal.util,org.hibernate.persister.collection,org.hibernate.dialect,org.hibernate.type,org.hibernate.persister.entity,org.hibernate.transform,org.hibernate.internal.util.collections,org.hibernate.hql.internal'/>
+      <p n='uses' v='org.hibernate.loader,org.hibernate,org.hibernate.internal.util,org.hibernate.persister.collection,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate.type,org.hibernate.persister.entity,org.hibernate.transform,org.hibernate.internal.util.collections,org.hibernate.hql.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.transaction.spi'/>
-      <p n='uses' v='org.hibernate,org.hibernate.service.jta.platform.spi,org.hibernate.internal,javax.transaction,org.jboss.logging,org.hibernate.jdbc,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.synchronization.spi,org.hibernate.stat.spi,org.hibernate.service'/>
+      <p n='uses' v='org.hibernate,org.hibernate.service.jta.platform.spi,org.hibernate.internal,javax.transaction,org.jboss.logging,org.hibernate.jdbc,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.synchronization.spi,org.hibernate.engine.spi,org.hibernate.stat.spi,org.hibernate.service'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1729,17 +1729,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.annotations.attribute'/>
-      <p n='uses' v='org.hibernate.metamodel.source,org.hibernate.metamodel.source.annotations.attribute.type,org.hibernate.metamodel.source.annotations.entity,org.hibernate.mapping,org.hibernate.annotations,org.hibernate,org.hibernate.metamodel.source.annotations,org.jboss.jandex,javax.persistence,org.hibernate.internal.jaxb,org.hibernate.internal.util,org.hibernate.metamodel,org.hibernate.metamodel.binding,org.hibernate.cfg,org.hibernate.metamodel.relational,org.hibernate.metamodel.source.binder,org.hibernate.engine'/>
+      <p n='uses' v='org.hibernate.metamodel.source,org.hibernate.metamodel.source.annotations.attribute.type,org.hibernate.metamodel.source.annotations.entity,org.hibernate.mapping,org.hibernate.annotations,org.hibernate,org.hibernate.metamodel.source.annotations,org.jboss.jandex,javax.persistence,org.hibernate.internal.jaxb,org.hibernate.internal.util,org.hibernate.metamodel,org.hibernate.metamodel.binding,org.hibernate.cfg,org.hibernate.metamodel.relational,org.hibernate.metamodel.source.binder,org.hibernate.engine.spi,org.hibernate.engine'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.param'/>
-      <p n='uses' v='org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.type,org.hibernate.engine.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.persister.collection'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.sql.ordering.antlr,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.loader.collection,org.hibernate.exception.spi,org.hibernate.dialect.function,org.hibernate.pretty,org.hibernate.internal.util,org.hibernate.jdbc,org.hibernate.engine.jdbc.batch.spi,org.hibernate.sql,org.hibernate.type,org.hibernate.cache.spi.entry,org.hibernate.engine.transaction.spi,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.engine.jdbc.batch.internal,org.hibernate.id.factory.spi,org.hibernate.id,org.hibernate.engine.jdbc.spi,org.hibernate.collection.spi,org.hibernate.dialect,org.hibernate.id.factory,org.hibernate.metadata,org.hibernate,org.hibernate.cache,org.jboss.logging,org.hibernate.loader.entity'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.mapping,org.hibernate.sql.ordering.antlr,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.loader.collection,org.hibernate.exception.spi,org.hibernate.dialect.function,org.hibernate.pretty,org.hibernate.internal.util,org.hibernate.jdbc,org.hibernate.engine.jdbc.batch.spi,org.hibernate.sql,org.hibernate.type,org.hibernate.cache.spi.entry,org.hibernate.engine.transaction.spi,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.engine.jdbc.batch.internal,org.hibernate.id.factory.spi,org.hibernate.id,org.hibernate.engine.jdbc.spi,org.hibernate.collection.spi,org.hibernate.dialect,org.hibernate.id.factory,org.hibernate.metadata,org.hibernate,org.hibernate.cache,org.jboss.logging,org.hibernate.loader.entity'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1764,7 +1764,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader'/>
-      <p n='uses' v='org.hibernate.engine.profile,org.hibernate.dialect,org.hibernate.persister.entity,org.hibernate,org.hibernate.cfg,org.hibernate.sql,org.hibernate.type,org.hibernate.persister.collection,org.hibernate.internal.util,org.hibernate.internal.util.collections,org.hibernate.engine.internal,org.hibernate.pretty,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.engine.transaction.spi,org.hibernate.hql.internal,org.hibernate.internal,org.hibernate.engine.loading.internal,org.hibernate.engine.jdbc,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.proxy,org.hibernate.collection.spi,org.hibernate.cache.spi,org.jboss.logging,org.hibernate.stat'/>
+      <p n='uses' v='org.hibernate.engine.profile,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate.persister.entity,org.hibernate,org.hibernate.cfg,org.hibernate.sql,org.hibernate.type,org.hibernate.persister.collection,org.hibernate.internal.util,org.hibernate.internal.util.collections,org.hibernate.engine.internal,org.hibernate.pretty,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.engine.transaction.spi,org.hibernate.hql.internal,org.hibernate.internal,org.hibernate.engine.loading.internal,org.hibernate.engine.jdbc,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.proxy,org.hibernate.collection.spi,org.hibernate.cache.spi,org.jboss.logging,org.hibernate.stat'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1774,12 +1774,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal.ast.util'/>
-      <p n='uses' v='antlr.collections,antlr,org.hibernate.internal.util,org.hibernate.hql.internal.ast.tree,antlr.collections.impl,org.hibernate.hql.internal,org.hibernate.internal,org.hibernate.engine.internal,org.hibernate.hql.internal.ast,org.hibernate.hql.internal.antlr,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect,org.hibernate.internal.util.collections,org.hibernate.param,org.hibernate,org.jboss.logging,org.hibernate.persister.entity,org.hibernate.dialect.function,org.hibernate.cfg,org.hibernate.persister.collection'/>
+      <p n='uses' v='antlr.collections,antlr,org.hibernate.internal.util,org.hibernate.hql.internal.ast.tree,antlr.collections.impl,org.hibernate.hql.internal,org.hibernate.internal,org.hibernate.engine.internal,org.hibernate.hql.internal.ast,org.hibernate.hql.internal.antlr,org.hibernate.sql,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate.internal.util.collections,org.hibernate.param,org.hibernate,org.jboss.logging,org.hibernate.persister.entity,org.hibernate.dialect.function,org.hibernate.cfg,org.hibernate.persister.collection'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.persister.entity'/>
-      <p n='uses' v='org.hibernate.type,org.hibernate.id.insert,org.hibernate.metamodel.domain,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.engine.jdbc.batch.spi,org.hibernate.jdbc,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.sql,org.hibernate.cache.spi.entry,org.hibernate.engine.transaction.spi,org.hibernate.bytecode.instrumentation.spi,org.hibernate.tuple,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.metamodel.binding,org.hibernate.engine,org.hibernate.engine.jdbc.batch.internal,org.hibernate.id,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.engine.jdbc.spi,org.hibernate.loader.entity,org.hibernate.mapping,org.hibernate.dialect,org.hibernate.metamodel.relational,org.hibernate.metadata,org.hibernate,org.hibernate.cache.spi,org.hibernate.bytecode.spi,org.jboss.logging,org.hibernate.engine.internal,org.hibernate.property,org.hibernate.stat,org.hibernate.dialect.lock,org.dom4j,org.hibernate.internal.util.compare'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.type,org.hibernate.id.insert,org.hibernate.metamodel.domain,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.engine.jdbc.batch.spi,org.hibernate.jdbc,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.sql,org.hibernate.cache.spi.entry,org.hibernate.engine.transaction.spi,org.hibernate.bytecode.instrumentation.spi,org.hibernate.tuple,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.metamodel.binding,org.hibernate.engine,org.hibernate.engine.jdbc.batch.internal,org.hibernate.id,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.engine.jdbc.spi,org.hibernate.loader.entity,org.hibernate.mapping,org.hibernate.dialect,org.hibernate.metamodel.relational,org.hibernate.metadata,org.hibernate,org.hibernate.cache.spi,org.hibernate.bytecode.spi,org.jboss.logging,org.hibernate.engine.internal,org.hibernate.property,org.hibernate.stat,org.hibernate.dialect.lock,org.dom4j,org.hibernate.internal.util.compare'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1794,7 +1794,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cfg'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.annotations.common.reflection,org.hibernate,javax.persistence,org.hibernate.annotations,org.hibernate.id,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.id.enhanced,org.hibernate.mapping,org.hibernate.cfg.annotations,org.hibernate.internal,org.hibernate.cache.spi,org.jboss.logging,org.dom4j,org.w3c.dom,org.hibernate.annotations.common,org.hibernate.service.internal,org.hibernate.service,org.hibernate.id.factory.spi,org.hibernate.id.factory,org.hibernate.engine,org.hibernate.internal.util.collections,org.hibernate.internal.util.xml,org.hibernate.dialect.function,org.hibernate.tuple.entity,org.hibernate.secure.internal,org.xml.sax,org.hibernate.internal.util.config,org.hibernate.id.factory.internal,org.hibernate.cfg.annotations.reflection,org.hibernate.proxy,org.hibernate.dialect,org.dom4j.io,org.hibernate.tool.hbm2ddl,org.hibernate.context.spi,org.hibernate.annotations.common.reflection.java,org.hibernate.usertype,org.hibernate.bytecode.internal.javassist,org.hibernate.bytecode.spi,org.hibernate.engine.query.spi.sql,org.hibernate.hql.spi,org.hibernate.service.jta.platform.spi,org.hibernate.cache.internal,org.hibernate.service.classloading.spi,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.service.jdbc.connections.spi'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.annotations.common.reflection,org.hibernate,javax.persistence,org.hibernate.annotations,org.hibernate.id,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.id.enhanced,org.hibernate.engine.spi,org.hibernate.mapping,org.hibernate.cfg.annotations,org.hibernate.internal,org.hibernate.cache.spi,org.jboss.logging,org.dom4j,org.w3c.dom,org.hibernate.annotations.common,org.hibernate.service.internal,org.hibernate.service,org.hibernate.id.factory.spi,org.hibernate.id.factory,org.hibernate.engine,org.hibernate.internal.util.collections,org.hibernate.internal.util.xml,org.hibernate.dialect.function,org.hibernate.tuple.entity,org.hibernate.secure.internal,org.xml.sax,org.hibernate.internal.util.config,org.hibernate.id.factory.internal,org.hibernate.cfg.annotations.reflection,org.hibernate.proxy,org.hibernate.dialect,org.dom4j.io,org.hibernate.tool.hbm2ddl,org.hibernate.context.spi,org.hibernate.annotations.common.reflection.java,org.hibernate.usertype,org.hibernate.bytecode.internal.javassist,org.hibernate.bytecode.spi,org.hibernate.engine.query.spi.sql,org.hibernate.hql.spi,org.hibernate.service.jta.platform.spi,org.hibernate.cache.internal,org.hibernate.service.classloading.spi,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.service.jdbc.connections.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1819,7 +1819,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.context.internal'/>
-      <p n='uses' v='javax.transaction,org.hibernate.engine.transaction.internal.jta,org.hibernate.service.jta.platform.spi,org.hibernate.service,org.hibernate,org.hibernate.service.spi,org.hibernate.internal,org.hibernate.context.spi,org.jboss.logging,org.hibernate.cfg,org.hibernate.event.spi,org.hibernate.engine.transaction.spi,org.hibernate.engine.jdbc'/>
+      <p n='uses' v='javax.transaction,org.hibernate.engine.transaction.internal.jta,org.hibernate.service.jta.platform.spi,org.hibernate.service,org.hibernate.engine.spi,org.hibernate,org.hibernate.service.spi,org.hibernate.internal,org.hibernate.context.spi,org.jboss.logging,org.hibernate.cfg,org.hibernate.event.spi,org.hibernate.engine.transaction.spi,org.hibernate.engine.jdbc'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1829,17 +1829,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.proxy'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.query.spi'/>
-      <p n='uses' v='org.hibernate.cfg,org.hibernate.event.spi,org.hibernate.type,org.hibernate.hql.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.hql.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.loader.custom.sql,org.hibernate.engine.query.spi.sql,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate.action.spi,org.hibernate.internal.util,org.hibernate.internal.util.config'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.cfg,org.hibernate.event.spi,org.hibernate.type,org.hibernate.hql.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.hql.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.loader.custom.sql,org.hibernate.engine.query.spi.sql,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate.action.spi,org.hibernate.internal.util,org.hibernate.internal.util.config'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.mapping'/>
-      <p n='uses' v='org.hibernate.dialect,org.hibernate,org.hibernate.cfg,org.hibernate.type,org.hibernate.internal.util,org.hibernate.property,org.hibernate.internal.util.collections,org.hibernate.dialect.function,org.hibernate.sql,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.tuple.component,org.hibernate.id.factory,org.hibernate.internal,org.jboss.logging,org.hibernate.tool.hbm2ddl'/>
+      <p n='uses' v='org.hibernate.dialect,org.hibernate,org.hibernate.cfg,org.hibernate.type,org.hibernate.internal.util,org.hibernate.property,org.hibernate.engine.spi,org.hibernate.internal.util.collections,org.hibernate.dialect.function,org.hibernate.sql,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.tuple.component,org.hibernate.id.factory,org.hibernate.internal,org.jboss.logging,org.hibernate.tool.hbm2ddl'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1854,12 +1854,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.service.internal'/>
-      <p n='uses' v='org.hibernate.internal.util.collections,org.hibernate.service.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.service,org.hibernate.service.jmx.spi,org.hibernate.integrator.internal,org.hibernate.service.classloading.internal,org.hibernate.service.classloading.spi,org.hibernate.integrator.spi,javax.xml.bind,org.hibernate.metamodel.source,org.xml.sax,javax.xml.stream,org.hibernate.internal.jaxb.cfg,javax.xml.transform,org.hibernate.internal.util.config,javax.xml.transform.stream,javax.xml.validation,org.hibernate.internal.jaxb,org.hibernate,org.hibernate.cfg,org.hibernate.event.service.internal,org.hibernate.stat.internal'/>
+      <p n='uses' v='org.hibernate.internal.util.collections,org.hibernate.service.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.service,org.hibernate.service.jmx.spi,org.hibernate.integrator.internal,org.hibernate.service.classloading.internal,org.hibernate.service.classloading.spi,org.hibernate.integrator.spi,javax.xml.bind,org.hibernate.metamodel.source,org.xml.sax,javax.xml.stream,org.hibernate.internal.jaxb.cfg,javax.xml.transform,org.hibernate.internal.util.config,javax.xml.transform.stream,javax.xml.validation,org.hibernate.internal.jaxb,org.hibernate,org.hibernate.engine.spi,org.hibernate.cfg,org.hibernate.event.service.internal,org.hibernate.stat.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.event.internal'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate.collection.spi,org.hibernate.event.service.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.service.spi,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.engine.internal,org.hibernate.pretty,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.cache.spi,org.hibernate.id,org.hibernate.bytecode.instrumentation.spi,org.hibernate.classic,org.hibernate.bytecode.spi,org.hibernate.stat.spi,org.hibernate.stat,org.hibernate.cfg,org.hibernate.proxy,org.hibernate.tuple.entity,org.hibernate.cache.spi.entry,org.hibernate.tuple,org.hibernate.action.spi'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.action.internal,org.hibernate.collection.spi,org.hibernate.engine.spi,org.hibernate.event.service.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.service.spi,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.engine.internal,org.hibernate.pretty,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.cache.spi,org.hibernate.id,org.hibernate.bytecode.instrumentation.spi,org.hibernate.classic,org.hibernate.bytecode.spi,org.hibernate.stat.spi,org.hibernate.stat,org.hibernate.cfg,org.hibernate.proxy,org.hibernate.tuple.entity,org.hibernate.cache.spi.entry,org.hibernate.tuple,org.hibernate.action.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1889,32 +1889,32 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.proxy.pojo.javassist'/>
-      <p n='uses' v='javassist.util.proxy,org.hibernate.internal.util,org.hibernate.type,org.hibernate.proxy,org.hibernate,org.hibernate.internal,org.hibernate.proxy.pojo,org.jboss.logging'/>
+      <p n='uses' v='javassist.util.proxy,org.hibernate.internal.util,org.hibernate.type,org.hibernate.proxy,org.hibernate.engine.spi,org.hibernate,org.hibernate.internal,org.hibernate.proxy.pojo,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.usertype'/>
-      <p n='uses' v='org.hibernate,org.hibernate.type,org.hibernate.metamodel.relational,org.hibernate.collection.spi,org.hibernate.persister.collection'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate,org.hibernate.type,org.hibernate.metamodel.relational,org.hibernate.collection.spi,org.hibernate.persister.collection'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.binder'/>
-      <p n='uses' v='org.hibernate.engine,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.binding,org.hibernate.internal.util.beans,org.hibernate.metamodel.domain,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.metamodel,org.hibernate.mapping,org.hibernate.metamodel.source.hbm,org.hibernate.metamodel.relational,org.hibernate.internal.jaxb'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.engine,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.binding,org.hibernate.internal.util.beans,org.hibernate.metamodel.domain,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.metamodel,org.hibernate.mapping,org.hibernate.metamodel.source.hbm,org.hibernate.metamodel.relational,org.hibernate.internal.jaxb'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.custom.sql'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate,org.hibernate.engine.query.spi.sql,org.hibernate.internal,org.jboss.logging,org.hibernate.loader.custom,org.hibernate.engine.query.spi,org.hibernate.cfg,org.hibernate.loader,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.engine.spi,org.hibernate,org.hibernate.engine.query.spi.sql,org.hibernate.internal,org.jboss.logging,org.hibernate.loader.custom,org.hibernate.engine.query.spi,org.hibernate.cfg,org.hibernate.loader,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.bytecode.internal.javassist'/>
-      <p n='uses' v='org.hibernate,org.hibernate.bytecode.spi,javassist.bytecode,javassist,javassist.util.proxy,org.hibernate.bytecode.instrumentation.spi,org.hibernate.bytecode.instrumentation.internal.javassist,org.hibernate.internal.util,org.hibernate.bytecode.buildtime.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.proxy,org.hibernate.proxy.pojo.javassist'/>
+      <p n='uses' v='org.hibernate,org.hibernate.bytecode.spi,javassist.bytecode,javassist,javassist.util.proxy,org.hibernate.bytecode.instrumentation.spi,org.hibernate.engine.spi,org.hibernate.bytecode.instrumentation.internal.javassist,org.hibernate.internal.util,org.hibernate.bytecode.buildtime.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.proxy,org.hibernate.proxy.pojo.javassist'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source'/>
-      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.service,org.hibernate.internal.jaxb,org.hibernate.cache.spi.access,org.hibernate,org.hibernate.metamodel.binding,org.hibernate.metamodel.relational,org.hibernate.engine,org.hibernate.metamodel,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.service,org.hibernate.internal.jaxb,org.hibernate.cache.spi.access,org.hibernate,org.hibernate.metamodel.binding,org.hibernate.engine.spi,org.hibernate.metamodel.relational,org.hibernate.engine,org.hibernate.metamodel,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1924,7 +1924,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.persister.internal'/>
-      <p n='uses' v='org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.persister.spi,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.cache.spi.access,org.hibernate.mapping,org.hibernate,org.hibernate.persister.collection,org.hibernate.metamodel.binding,org.hibernate.metamodel.domain'/>
+      <p n='uses' v='org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.persister.spi,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.cache.spi.access,org.hibernate.engine.spi,org.hibernate.mapping,org.hibernate,org.hibernate.persister.collection,org.hibernate.metamodel.binding,org.hibernate.metamodel.domain'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1939,22 +1939,22 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.stat.spi'/>
-      <p n='uses' v='org.hibernate.service,org.hibernate.stat'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.service,org.hibernate.stat'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cache.spi.entry'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.service,org.hibernate.type,org.hibernate.event.service.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.service.spi,org.hibernate.collection.spi,org.hibernate.persister.collection'/>
+      <p n='uses' v='org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.service,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.event.service.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.service.spi,org.hibernate.collection.spi,org.hibernate.persister.collection'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.id.insert'/>
-      <p n='uses' v='org.hibernate.pretty,org.hibernate.id,org.hibernate.persister.entity,org.hibernate,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.dialect,org.hibernate.sql'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.pretty,org.hibernate.id,org.hibernate.persister.entity,org.hibernate,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.dialect,org.hibernate.sql'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cfg.beanvalidation'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.internal,org.hibernate.cfg,javax.validation,org.hibernate.event.spi,org.jboss.logging,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.dialect,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.internal.util.config,org.hibernate.integrator.spi,javax.validation.groups,org.hibernate.internal.util,org.hibernate.annotations.common,org.hibernate.type,javax.validation.metadata,javax.validation.constraints,org.hibernate.mapping'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate,org.hibernate.internal,org.hibernate.cfg,javax.validation,org.hibernate.event.spi,org.jboss.logging,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.dialect,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.internal.util.config,org.hibernate.integrator.spi,javax.validation.groups,org.hibernate.internal.util,org.hibernate.annotations.common,org.hibernate.type,javax.validation.metadata,javax.validation.constraints,org.hibernate.mapping'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1964,12 +1964,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.bytecode.instrumentation.spi'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.tuple'/>
-      <p n='uses' v='org.hibernate.internal.util.xml,org.hibernate.mapping,org.dom4j,org.hibernate.metamodel.domain,org.hibernate.metamodel.binding,org.hibernate.id,org.hibernate.type,org.hibernate.internal.util,org.hibernate,org.hibernate.internal,org.hibernate.bytecode.spi,org.jboss.logging,org.hibernate.metamodel.relational,org.hibernate.property,org.hibernate.engine.internal'/>
+      <p n='uses' v='org.hibernate.internal.util.xml,org.hibernate.mapping,org.dom4j,org.hibernate.metamodel.domain,org.hibernate.metamodel.binding,org.hibernate.engine.spi,org.hibernate.id,org.hibernate.type,org.hibernate.internal.util,org.hibernate,org.hibernate.internal,org.hibernate.bytecode.spi,org.jboss.logging,org.hibernate.metamodel.relational,org.hibernate.property,org.hibernate.engine.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -1999,7 +1999,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.annotations'/>
-      <p n='uses' v='org.hibernate.metamodel.source,org.jboss.jandex,com.fasterxml.classmate,org.hibernate.internal.util,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.metamodel.domain,org.hibernate.cfg,org.hibernate.metamodel,org.hibernate.internal.jaxb.mapping.orm,org.hibernate,org.hibernate.metamodel.source.annotations.xml.mocker,org.hibernate.metamodel.source.internal,org.hibernate.metamodel.source.annotations.xml,org.jboss.logging,org.hibernate.metamodel.source.annotations.global,org.hibernate.metamodel.source.binder,org.hibernate.internal.jaxb,org.hibernate.metamodel.source.annotations.entity,org.hibernate.internal.util.collections,org.hibernate.metamodel.binding,javax.persistence,org.hibernate.annotations,org.hibernate.id'/>
+      <p n='uses' v='org.hibernate.metamodel.source,org.jboss.jandex,com.fasterxml.classmate,org.hibernate.internal.util,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.metamodel.domain,org.hibernate.cfg,org.hibernate.metamodel,org.hibernate.internal.jaxb.mapping.orm,org.hibernate,org.hibernate.metamodel.source.annotations.xml.mocker,org.hibernate.metamodel.source.internal,org.hibernate.metamodel.source.annotations.xml,org.jboss.logging,org.hibernate.metamodel.source.annotations.global,org.hibernate.metamodel.source.binder,org.hibernate.internal.jaxb,org.hibernate.metamodel.source.annotations.entity,org.hibernate.internal.util.collections,org.hibernate.metamodel.binding,javax.persistence,org.hibernate.annotations,org.hibernate.engine.spi,org.hibernate.id'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2009,7 +2009,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.jmx'/>
-      <p n='uses' v='javax.naming,org.hibernate,org.hibernate.internal,org.hibernate.cfg,org.hibernate.tool.hbm2ddl,org.hibernate.service,org.jboss.logging,org.hibernate.internal.util.jndi,org.hibernate.id,org.hibernate.service.jndi.spi,org.hibernate.service.jndi.internal,org.hibernate.metadata,org.hibernate.internal.util.config,org.hibernate.stat,org.hibernate.stat.internal'/>
+      <p n='uses' v='javax.naming,org.hibernate,org.hibernate.internal,org.hibernate.cfg,org.hibernate.tool.hbm2ddl,org.hibernate.service,org.jboss.logging,org.hibernate.internal.util.jndi,org.hibernate.id,org.hibernate.service.jndi.spi,org.hibernate.engine.spi,org.hibernate.service.jndi.internal,org.hibernate.metadata,org.hibernate.internal.util.config,org.hibernate.stat,org.hibernate.stat.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2019,12 +2019,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.persister.spi'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.service,org.hibernate.metamodel.binding,org.hibernate,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.cache.spi.access'/>
+      <p n='uses' v='org.hibernate.mapping,org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate.service,org.hibernate.metamodel.binding,org.hibernate.engine.spi,org.hibernate,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.cache.spi.access'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.annotations.global'/>
-      <p n='uses' v='org.hibernate.annotations,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.source.annotations,org.jboss.jandex,org.hibernate.metamodel.binding,org.hibernate.internal,org.jboss.logging,org.hibernate.type,org.hibernate.internal.util,org.hibernate.metamodel,javax.persistence,org.hibernate.engine.query.spi.sql,org.hibernate.cfg,org.hibernate.metamodel.relational'/>
+      <p n='uses' v='org.hibernate.annotations,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.source.annotations,org.jboss.jandex,org.hibernate.metamodel.binding,org.hibernate.engine.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.type,org.hibernate.internal.util,org.hibernate.metamodel,javax.persistence,org.hibernate.engine.query.spi.sql,org.hibernate.cfg,org.hibernate.metamodel.relational'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2034,12 +2034,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal.classic'/>
-      <p n='uses' v='org.hibernate.hql.spi,org.hibernate,org.hibernate.persister.entity,org.hibernate.sql,org.hibernate.type,org.hibernate.internal.util,org.hibernate.engine.internal,org.hibernate.hql.internal,org.hibernate.persister.collection,org.hibernate.stat.spi,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.loader,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.dialect,org.jboss.logging,org.hibernate.stat,org.hibernate.dialect.function'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.hql.spi,org.hibernate,org.hibernate.persister.entity,org.hibernate.sql,org.hibernate.type,org.hibernate.internal.util,org.hibernate.engine.internal,org.hibernate.hql.internal,org.hibernate.persister.collection,org.hibernate.stat.spi,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.loader,org.hibernate.event.spi,org.hibernate.transform,org.hibernate.engine.jdbc.spi,org.hibernate.dialect,org.jboss.logging,org.hibernate.stat,org.hibernate.dialect.function'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.event.spi'/>
-      <p n='uses' v='org.hibernate.collection.spi,org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate'/>
+      <p n='uses' v='org.hibernate.collection.spi,org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate.persister.collection,org.hibernate'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2049,17 +2049,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.id.enhanced'/>
-      <p n='uses' v='org.hibernate.id,org.hibernate.dialect,org.hibernate,org.hibernate.internal,org.hibernate.internal.util,org.jboss.logging,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.cfg,org.hibernate.type,org.hibernate.mapping,org.hibernate.internal.util.config,org.hibernate.jdbc,org.hibernate.engine.jdbc.internal,org.hibernate.service,org.hibernate.service.spi'/>
+      <p n='uses' v='org.hibernate.id,org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate,org.hibernate.internal,org.hibernate.internal.util,org.jboss.logging,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.cfg,org.hibernate.type,org.hibernate.mapping,org.hibernate.internal.util.config,org.hibernate.jdbc,org.hibernate.engine.jdbc.internal,org.hibernate.service,org.hibernate.service.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.loader.entity'/>
-      <p n='uses' v='org.hibernate.loader,org.hibernate.persister.entity,org.hibernate,org.hibernate.transform,org.hibernate.type,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.persister.collection,org.jboss.logging,org.hibernate.tuple,org.hibernate.tuple.entity,org.hibernate.sql'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.loader,org.hibernate.persister.entity,org.hibernate,org.hibernate.transform,org.hibernate.type,org.hibernate.internal.util.collections,org.hibernate.internal,org.hibernate.persister.collection,org.jboss.logging,org.hibernate.tuple,org.hibernate.tuple.entity,org.hibernate.sql'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.action.internal'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.engine.internal,org.hibernate.type,org.hibernate.action.spi,org.hibernate.cache.spi.access,org.hibernate.persister.collection,org.hibernate.cache.spi,org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.event.spi,org.hibernate.service,org.hibernate.collection.spi,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.cache,org.hibernate.stat.spi,org.hibernate.stat,org.hibernate.cache.spi.entry,org.hibernate.internal.util.collections,org.hibernate.internal,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate,org.hibernate.engine.internal,org.hibernate.type,org.hibernate.action.spi,org.hibernate.cache.spi.access,org.hibernate.persister.collection,org.hibernate.cache.spi,org.hibernate.internal.util,org.hibernate.pretty,org.hibernate.event.spi,org.hibernate.service,org.hibernate.collection.spi,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.cache,org.hibernate.stat.spi,org.hibernate.stat,org.hibernate.cache.spi.entry,org.hibernate.internal.util.collections,org.hibernate.internal,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2074,7 +2074,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.sql.ordering.antlr'/>
-      <p n='uses' v='org.hibernate,antlr,antlr.collections.impl,antlr.collections,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.dialect,org.hibernate.internal,org.jboss.logging,org.hibernate.type,org.hibernate.hql.internal.ast.util'/>
+      <p n='uses' v='org.hibernate,antlr,antlr.collections.impl,antlr.collections,org.hibernate.engine.spi,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.dialect,org.hibernate.internal,org.jboss.logging,org.hibernate.type,org.hibernate.hql.internal.ast.util'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2084,17 +2084,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.dialect'/>
-      <p n='uses' v='org.hibernate.dialect.function,org.hibernate,org.hibernate.type,org.hibernate.exception.spi,org.hibernate.internal.util,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.exception.internal,org.hibernate.sql,org.hibernate.dialect.lock,org.hibernate.internal,org.jboss.logging,org.hibernate.internal.util.io,org.hibernate.engine.jdbc.spi,org.hibernate.internal.util.collections,org.hibernate.engine.jdbc,org.hibernate.cfg,org.hibernate.type.descriptor.sql'/>
+      <p n='uses' v='org.hibernate.dialect.function,org.hibernate,org.hibernate.type,org.hibernate.exception.spi,org.hibernate.internal.util,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.exception.internal,org.hibernate.sql,org.hibernate.dialect.lock,org.hibernate.internal,org.jboss.logging,org.hibernate.engine.spi,org.hibernate.internal.util.io,org.hibernate.engine.jdbc.spi,org.hibernate.internal.util.collections,org.hibernate.engine.jdbc,org.hibernate.cfg,org.hibernate.type.descriptor.sql'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.proxy.map'/>
-      <p n='uses' v='org.hibernate.proxy,org.hibernate,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.proxy,org.hibernate.engine.spi,org.hibernate,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate'/>
-      <p n='uses' v='org.hibernate.internal,org.jboss.logging,org.hibernate.criterion,org.hibernate.transform,org.hibernate.sql,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.bytecode.instrumentation.spi,org.hibernate.proxy,org.hibernate.collection.spi,org.hibernate.engine,org.hibernate.engine.jdbc.spi,org.hibernate.engine.jdbc,org.hibernate.bytecode.instrumentation.internal,org.hibernate.internal.util.xml,org.hibernate.internal.jaxb,org.hibernate.pretty,org.hibernate.dialect.lock,org.hibernate.internal.util,org.hibernate.engine.query.spi.sql,org.hibernate.jdbc,org.hibernate.stat,javax.naming,org.hibernate.metadata,javax.transaction,org.hibernate.engine.transaction.spi'/>
+      <p n='uses' v='org.hibernate.internal,org.jboss.logging,org.hibernate.criterion,org.hibernate.transform,org.hibernate.sql,org.hibernate.persister.entity,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.bytecode.instrumentation.spi,org.hibernate.proxy,org.hibernate.collection.spi,org.hibernate.engine,org.hibernate.engine.jdbc.spi,org.hibernate.engine.jdbc,org.hibernate.bytecode.instrumentation.internal,org.hibernate.internal.util.xml,org.hibernate.internal.jaxb,org.hibernate.pretty,org.hibernate.dialect.lock,org.hibernate.internal.util,org.hibernate.engine.query.spi.sql,org.hibernate.jdbc,org.hibernate.stat,javax.naming,org.hibernate.metadata,javax.transaction,org.hibernate.engine.transaction.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2104,12 +2104,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.internal'/>
-      <p n='uses' v='org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.type,org.hibernate.collection.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.cfg,org.hibernate.bytecode.instrumentation.spi,org.hibernate.proxy,org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.sql,org.hibernate.cache.spi.access,org.hibernate.stat.spi,org.hibernate.cache.spi,org.hibernate.stat,org.hibernate.action.spi,org.dom4j,org.hibernate.tuple.entity,org.hibernate.tuple,org.hibernate.engine.loading.internal,org.hibernate.service,org.hibernate.cache.spi.entry,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.property'/>
+      <p n='uses' v='org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.event.spi,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.collection.spi,org.hibernate.internal.util.collections,org.hibernate,org.hibernate.persister.collection,org.hibernate.internal,org.jboss.logging,org.hibernate.cfg,org.hibernate.bytecode.instrumentation.spi,org.hibernate.proxy,org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.sql,org.hibernate.cache.spi.access,org.hibernate.stat.spi,org.hibernate.cache.spi,org.hibernate.stat,org.hibernate.action.spi,org.dom4j,org.hibernate.tuple.entity,org.hibernate.tuple,org.hibernate.engine.loading.internal,org.hibernate.service,org.hibernate.cache.spi.entry,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.property'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.stat.internal'/>
-      <p n='uses' v='org.hibernate.stat,org.hibernate.cache.spi,org.hibernate.stat.spi,org.hibernate.service,org.hibernate.internal.util.collections,org.hibernate.internal,org.jboss.logging,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service.spi,org.hibernate,org.hibernate.service.config.spi'/>
+      <p n='uses' v='org.hibernate.stat,org.hibernate.cache.spi,org.hibernate.stat.spi,org.hibernate.service,org.hibernate.engine.spi,org.hibernate.internal.util.collections,org.hibernate.internal,org.jboss.logging,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.service.classloading.spi,org.hibernate.service.spi,org.hibernate,org.hibernate.service.config.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2119,7 +2119,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cache.internal'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.persister.entity,org.hibernate.cache.spi,org.hibernate.tuple.entity,org.hibernate.type,org.hibernate.metamodel.binding,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.cache,org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate,org.hibernate.internal,org.jboss.logging,javax.persistence'/>
+      <p n='uses' v='org.hibernate.mapping,org.hibernate.persister.entity,org.hibernate.cache.spi,org.hibernate.tuple.entity,org.hibernate.type,org.hibernate.metamodel.binding,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.cache,org.hibernate.service.spi,org.hibernate.service.classloading.spi,org.hibernate.service,org.hibernate.engine.spi,org.hibernate,org.hibernate.internal,org.jboss.logging,javax.persistence'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2139,12 +2139,12 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.tuple.entity'/>
-      <p n='uses' v='org.hibernate.proxy,org.hibernate.persister.entity,org.hibernate,org.hibernate.internal,org.hibernate.event.spi,org.hibernate.type,org.hibernate.id,org.hibernate.service,org.hibernate.bytecode.instrumentation.spi,org.hibernate.mapping,org.hibernate.tuple,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.property,org.jboss.logging,org.hibernate.metamodel.binding,org.hibernate.metamodel.domain,org.hibernate.proxy.map,org.hibernate.engine,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.internal.util.collections,org.hibernate.bytecode.spi,org.hibernate.classic,org.hibernate.bytecode.instrumentation.internal'/>
+      <p n='uses' v='org.hibernate.proxy,org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate,org.hibernate.internal,org.hibernate.event.spi,org.hibernate.type,org.hibernate.id,org.hibernate.service,org.hibernate.bytecode.instrumentation.spi,org.hibernate.mapping,org.hibernate.tuple,org.hibernate.event.service.spi,org.hibernate.service.spi,org.hibernate.property,org.jboss.logging,org.hibernate.metamodel.binding,org.hibernate.metamodel.domain,org.hibernate.proxy.map,org.hibernate.engine,org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.internal.util.collections,org.hibernate.bytecode.spi,org.hibernate.classic,org.hibernate.bytecode.instrumentation.internal'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.event.service.internal'/>
-      <p n='uses' v='org.hibernate.event.service.spi,org.hibernate.event.spi,org.hibernate.event.internal,org.hibernate,org.hibernate.service.spi,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.service'/>
+      <p n='uses' v='org.hibernate.event.service.spi,org.hibernate.event.spi,org.hibernate.event.internal,org.hibernate,org.hibernate.engine.spi,org.hibernate.service.spi,org.hibernate.cfg,org.hibernate.metamodel.source,org.hibernate.service'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2159,32 +2159,32 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.cfg.annotations'/>
-      <p n='uses' v='org.hibernate.mapping,org.hibernate.cfg,org.hibernate.annotations.common.reflection,org.hibernate,org.hibernate.internal.util,org.hibernate.annotations.common,org.hibernate.annotations,org.hibernate.internal,org.jboss.logging,javax.persistence,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.sql,org.hibernate.dialect,org.hibernate.engine.query.spi.sql,org.hibernate.engine,org.hibernate.internal.util.collections'/>
+      <p n='uses' v='org.hibernate.mapping,org.hibernate.cfg,org.hibernate.annotations.common.reflection,org.hibernate,org.hibernate.internal.util,org.hibernate.engine.spi,org.hibernate.annotations.common,org.hibernate.annotations,org.hibernate.internal,org.jboss.logging,javax.persistence,org.hibernate.cache.spi.access,org.hibernate.type,org.hibernate.sql,org.hibernate.dialect,org.hibernate.engine.query.spi.sql,org.hibernate.engine,org.hibernate.internal.util.collections'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate,org.hibernate.sql,org.hibernate.engine.internal,org.hibernate.transform,org.hibernate.type,org.hibernate.hql.internal.classic,org.hibernate.internal,org.jboss.logging'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate,org.hibernate.sql,org.hibernate.engine.internal,org.hibernate.transform,org.hibernate.engine.spi,org.hibernate.type,org.hibernate.hql.internal.classic,org.hibernate.internal,org.jboss.logging'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.proxy.pojo'/>
-      <p n='uses' v='org.hibernate.proxy,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.type'/>
+      <p n='uses' v='org.hibernate.proxy,org.hibernate.engine.spi,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate.type'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.loading.internal'/>
-      <p n='uses' v='org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.type,org.hibernate.cache.spi.entry,org.hibernate.collection.spi,org.hibernate,org.hibernate.internal,org.hibernate.persister.collection,org.hibernate.cache.spi,org.jboss.logging,org.hibernate.stat'/>
+      <p n='uses' v='org.hibernate.pretty,org.hibernate.persister.entity,org.hibernate.cfg,org.hibernate.cache.spi.access,org.hibernate.stat.spi,org.hibernate.tuple.entity,org.hibernate.type,org.hibernate.cache.spi.entry,org.hibernate.engine.spi,org.hibernate.collection.spi,org.hibernate,org.hibernate.internal,org.hibernate.persister.collection,org.hibernate.cache.spi,org.jboss.logging,org.hibernate.stat'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.integrator.spi'/>
-      <p n='uses' v='org.hibernate.service.spi,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.service'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.service.spi,org.hibernate.metamodel.source,org.hibernate.cfg,org.hibernate.service'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal.ast'/>
-      <p n='uses' v='org.hibernate.hql.spi,org.hibernate.internal,org.jboss.logging,antlr,org.hibernate,org.hibernate.hql.internal.ast.tree,org.hibernate.hql.internal.antlr,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,antlr.collections,org.hibernate.param,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect,org.hibernate.internal.util.collections,org.hibernate.persister.collection,org.hibernate.engine.internal,org.hibernate.usertype,org.hibernate.event.spi,org.hibernate.hql.internal.ast.exec,org.hibernate.loader.hql,org.hibernate.hql.internal,org.hibernate.dialect.function'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.hql.spi,org.hibernate.internal,org.jboss.logging,antlr,org.hibernate,org.hibernate.hql.internal.ast.tree,org.hibernate.hql.internal.antlr,org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,antlr.collections,org.hibernate.param,org.hibernate.id,org.hibernate.persister.entity,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect,org.hibernate.internal.util.collections,org.hibernate.persister.collection,org.hibernate.engine.internal,org.hibernate.usertype,org.hibernate.event.spi,org.hibernate.hql.internal.ast.exec,org.hibernate.loader.hql,org.hibernate.hql.internal,org.hibernate.dialect.function'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2194,7 +2194,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.engine.jdbc.internal'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.engine.jdbc.batch.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.engine.transaction.internal,org.hibernate,org.hibernate.service.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.service.jdbc.connections.spi,org.hibernate.exception.spi,org.hibernate.exception.internal,org.hibernate.dialect,org.hibernate.service.jdbc.dialect.spi,org.hibernate.internal.util.config,org.hibernate.engine.jdbc,org.hibernate.engine.jdbc.internal.proxy,org.hibernate.internal.util.collections,org.hibernate.cfg'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.engine.jdbc.batch.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.engine.spi,org.hibernate.engine.transaction.internal,org.hibernate,org.hibernate.service.spi,org.hibernate.internal,org.jboss.logging,org.hibernate.service.jdbc.connections.spi,org.hibernate.exception.spi,org.hibernate.exception.internal,org.hibernate.dialect,org.hibernate.service.jdbc.dialect.spi,org.hibernate.internal.util.config,org.hibernate.engine.jdbc,org.hibernate.engine.jdbc.internal.proxy,org.hibernate.internal.util.collections,org.hibernate.cfg'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2214,7 +2214,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.id'/>
-      <p n='uses' v='org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate,org.hibernate.type,org.hibernate.engine.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.usertype,org.hibernate.sql,org.hibernate.id.insert,org.hibernate.cfg,org.hibernate.mapping,org.hibernate.service.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.engine.jdbc.internal,org.hibernate.id.enhanced,org.hibernate.internal.util.config,org.hibernate.type.descriptor.java,org.hibernate.id.uuid'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.dialect,org.hibernate.internal.util,org.hibernate.persister.entity,org.hibernate,org.hibernate.type,org.hibernate.engine.internal,org.hibernate.internal,org.jboss.logging,org.hibernate.engine.jdbc.spi,org.hibernate.engine.transaction.spi,org.hibernate.usertype,org.hibernate.sql,org.hibernate.id.insert,org.hibernate.cfg,org.hibernate.mapping,org.hibernate.service.spi,org.hibernate.jdbc,org.hibernate.service,org.hibernate.engine.jdbc.internal,org.hibernate.id.enhanced,org.hibernate.internal.util.config,org.hibernate.type.descriptor.java,org.hibernate.id.uuid'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2229,7 +2229,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.spi'/>
-      <p n='uses' v='org.hibernate,org.hibernate.type,org.hibernate.event.spi'/>
+      <p n='uses' v='org.hibernate,org.hibernate.type,org.hibernate.engine.spi,org.hibernate.event.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2239,17 +2239,17 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.criterion'/>
-      <p n='uses' v='org.hibernate.persister.entity,org.hibernate,org.hibernate.persister.collection,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.transform,org.hibernate.internal,org.hibernate.tuple.entity,org.hibernate.internal.util.collections,org.hibernate.dialect,org.hibernate.loader.criteria'/>
+      <p n='uses' v='org.hibernate.engine.spi,org.hibernate.persister.entity,org.hibernate,org.hibernate.persister.collection,org.hibernate.sql,org.hibernate.type,org.hibernate.dialect.function,org.hibernate.internal.util,org.hibernate.transform,org.hibernate.internal,org.hibernate.tuple.entity,org.hibernate.internal.util.collections,org.hibernate.dialect,org.hibernate.loader.criteria'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.source.internal'/>
-      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.binding,org.hibernate.metamodel.relational,org.hibernate.type,org.hibernate.cfg,org.hibernate.id,org.hibernate.id.factory,org.hibernate.service,org.hibernate.service.config.spi,javax.xml.bind,org.hibernate.service.classloading.spi,org.hibernate.metamodel,org.hibernate.internal.jaxb.mapping.hbm,javax.xml.transform.dom,javax.xml.stream.events,org.w3c.dom,org.xml.sax,javax.xml.namespace,org.hibernate.internal.jaxb.mapping.orm,javax.xml.stream,javax.xml.transform,javax.xml.transform.stream,org.jboss.logging,javax.xml.validation,org.hibernate.internal.jaxb,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.internal.util,org.hibernate.persister.spi,org.hibernate.cache.spi,org.hibernate.engine,org.hibernate.id.factory.spi,org.hibernate.metamodel.source.hbm,org.hibernate.internal,org.hibernate.metamodel.source.annotations,org.hibernate.proxy'/>
+      <p n='uses' v='org.hibernate.metamodel.domain,org.hibernate,org.hibernate.metamodel.source,org.hibernate.metamodel.binding,org.hibernate.engine.spi,org.hibernate.metamodel.relational,org.hibernate.type,org.hibernate.cfg,org.hibernate.id,org.hibernate.id.factory,org.hibernate.service,org.hibernate.service.config.spi,javax.xml.bind,org.hibernate.service.classloading.spi,org.hibernate.metamodel,org.hibernate.internal.jaxb.mapping.hbm,javax.xml.transform.dom,javax.xml.stream.events,org.w3c.dom,org.xml.sax,javax.xml.namespace,org.hibernate.internal.jaxb.mapping.orm,javax.xml.stream,javax.xml.transform,javax.xml.transform.stream,org.jboss.logging,javax.xml.validation,org.hibernate.internal.jaxb,org.hibernate.cache.spi.access,javax.persistence,org.hibernate.internal.util,org.hibernate.persister.spi,org.hibernate.cache.spi,org.hibernate.engine,org.hibernate.id.factory.spi,org.hibernate.metamodel.source.hbm,org.hibernate.internal,org.hibernate.metamodel.source.annotations,org.hibernate.proxy'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.bytecode.spi'/>
-      <p n='uses' v='org.hibernate.bytecode.buildtime.spi,org.hibernate.bytecode.instrumentation.spi,org.hibernate,org.hibernate.proxy'/>
+      <p n='uses' v='org.hibernate.bytecode.buildtime.spi,org.hibernate.bytecode.instrumentation.spi,org.hibernate.engine.spi,org.hibernate,org.hibernate.proxy'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2258,7 +2258,7 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.hql.internal.ast.tree'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.hql.internal.antlr,org.hibernate.persister.collection,antlr.collections,antlr,org.hibernate.type,org.hibernate.hql.internal.ast,org.hibernate,org.hibernate.internal,org.hibernate.dialect.function,org.jboss.logging,org.hibernate.transform,org.hibernate.persister.entity,org.hibernate.param,org.hibernate.dialect,org.hibernate.hql.internal,org.hibernate.engine.internal,org.hibernate.tuple.entity,org.hibernate.sql,org.hibernate.internal.util.collections'/>
+      <p n='uses' v='org.hibernate.internal.util,org.hibernate.hql.internal.ast.util,org.hibernate.hql.internal.antlr,org.hibernate.persister.collection,antlr.collections,antlr,org.hibernate.type,org.hibernate.hql.internal.ast,org.hibernate.engine.spi,org.hibernate,org.hibernate.internal,org.hibernate.dialect.function,org.jboss.logging,org.hibernate.transform,org.hibernate.persister.entity,org.hibernate.param,org.hibernate.dialect,org.hibernate.hql.internal,org.hibernate.engine.internal,org.hibernate.tuple.entity,org.hibernate.sql,org.hibernate.internal.util.collections'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2546,13 +2546,19 @@
   </resource>
   <resource id='hibernate-entitymanager/4.1.2' presentationname='hibernate-entitymanager' symbolicname='hibernate-entitymanager' uri='hibernate-entitymanager-4.1.2.jar' version='4.1.2'>
     <size>
-      485112
+      485865
     </size>
+    <capability name='fragment'>
+      <p n='host' v='hibernate-core'/>
+      <p n='version' t='version' v='0.0.0'/>
+    </capability>
     <capability name='bundle'>
+      <p n='host' v='hibernate-core'/>
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='hibernate-entitymanager'/>
       <p n='symbolicname' v='hibernate-entitymanager'/>
       <p n='version' t='version' v='4.1.2'/>
+      <p n='version' t='version' v='0.0.0'/>
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.ejb.metamodel'/>
@@ -2628,6 +2634,9 @@
       <p n='uses' v='org.hibernate.engine.spi,org.hibernate.engine.transaction.internal.jta,org.hibernate,org.hibernate.ejb.internal,javax.persistence.spi,org.hibernate.engine.transaction.synchronization.spi,org.hibernate.engine.transaction.spi,javax.transaction,javax.persistence,org.hibernate.ejb.criteria,org.hibernate.transform,org.hibernate.type,org.hibernate.internal.util.collections,org.hibernate.internal.util,org.hibernate.service.jta.platform.spi,org.hibernate.service,javax.persistence.metamodel,org.hibernate.engine,org.hibernate.engine.query.spi.sql,javax.persistence.criteria,org.hibernate.proxy,org.hibernate.engine.query.spi,org.hibernate.ejb.criteria.expression,org.hibernate.hql.spi,org.hibernate.metadata,org.hibernate.service.spi,org.jboss.logging,org.hibernate.ejb.util,org.hibernate.dialect.lock,org.hibernate.hql.internal,org.hibernate.service.internal,org.hibernate.ejb.packaging,org.hibernate.service.jdbc.connections.internal,org.hibernate.ejb.event,org.hibernate.secure.internal,org.hibernate.cfg.beanvalidation,org.xml.sax,org.hibernate.ejb.cfg.spi,org.hibernate.ejb.connection,org.hibernate.ejb.instrument,org.hibernate.internal,org.hibernate.integrator.spi,org.hibernate.cfg.annotations.reflection,javax.naming,org.hibernate.id.factory.spi,org.dom4j,org.hibernate.cfg,org.hibernate.engine.transaction.internal.jdbc,org.hibernate.mapping,org.hibernate.internal.util.xml,javax.sql,javax.naming.spi,org.hibernate.ejb.metamodel,org.hibernate.id,org.hibernate.internal.util.config,org.hibernate.annotations.common.util'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
+    <require extend='true' filter='(&amp;(symbolicname=hibernate-core)(version&gt;=0.0.0))' multiple='false' name='bundle' optional='false'>
+      Required Host hibernate-core
+    </require>
     <require extend='false' filter='(&amp;(package=javassist.bytecode)(version&gt;=3.15.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
       Import package javassist.bytecode ;version=[3.15.0,4.0.0)
     </require>
@@ -2679,8 +2688,8 @@
     <require extend='false' filter='(&amp;(package=org.dom4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.dom4j ;version=[1.6.0,2.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate
+    <require extend='false' filter='(&amp;(package=org.hibernate)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate ;version=[4.1.0,5.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=org.hibernate.annotations.common)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.annotations.common ;version=[4.0.0,5.0.0)
@@ -2692,176 +2701,182 @@
     <require extend='false' filter='(&amp;(package=org.hibernate.annotations.common.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.annotations.common.util ;version=[4.0.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.buildtime.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.buildtime.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.buildtime.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.buildtime.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.bytecode.instrumentation.internal
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.instrumentation.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.instrumentation.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cache)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cache
+    <require extend='false' filter='(&amp;(package=org.hibernate.cache)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cache ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.annotations.reflection)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg.annotations.reflection
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.annotations.reflection)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg.annotations.reflection ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.beanvalidation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg.beanvalidation
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.beanvalidation)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg.beanvalidation ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.collection.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.collection.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.collection.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.collection.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.dialect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.dialect
+    <require extend='false' filter='(&amp;(package=org.hibernate.dialect)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.dialect ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.dialect.lock)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.dialect.lock
+    <require extend='false' filter='(&amp;(package=org.hibernate.dialect.lock)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.dialect.lock ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.loading.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.loading.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.loading.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.loading.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.query.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.query.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.query.spi.sql
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi.sql)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.query.spi.sql ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jdbc)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jdbc)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.internal.jdbc
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jta)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jta)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.internal.jta
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.transaction.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.transaction.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.synchronization.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.synchronization.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.synchronization.spi
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.service.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.service.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.service.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.service.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.hql.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.hql.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.hql.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.hql.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.hql.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.hql.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.hql.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.hql.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.id)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.id
+    <require extend='false' filter='(&amp;(package=org.hibernate.id)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.id ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.id.factory.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.id.factory.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.id.factory.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.id.factory.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.integrator.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.integrator.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.integrator.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.integrator.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.collections)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.collections
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.collections)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.collections ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.config)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.config
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.config)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.config ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.xml)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.xml
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.xml)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.xml ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.mapping)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.mapping
+    <require extend='false' filter='(&amp;(package=org.hibernate.mapping)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.mapping ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metadata)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metadata
+    <require extend='false' filter='(&amp;(package=org.hibernate.metadata)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metadata ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.binding)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.binding
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.binding)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.binding ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.domain)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.domain
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.domain)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.domain ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.source
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.source ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source.binder)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.source.binder
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source.binder)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.source.binder ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.persister.collection)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.persister.collection
+    <require extend='false' filter='(&amp;(package=org.hibernate.persister.collection)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.persister.collection ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.persister.entity)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.persister.entity
+    <require extend='false' filter='(&amp;(package=org.hibernate.persister.entity)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.persister.entity ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.property)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.property
+    <require extend='false' filter='(&amp;(package=org.hibernate.property)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.property ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.proxy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.proxy
+    <require extend='false' filter='(&amp;(package=org.hibernate.proxy)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.proxy ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.secure.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.secure.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.secure.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.secure.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service
+    <require extend='false' filter='(&amp;(package=org.hibernate.service)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.classloading.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.classloading.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.classloading.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.classloading.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.connections.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.connections.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.service.jdbc.connections.internal
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.dialect.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.dialect.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.service.jdbc.dialect.internal
+       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jndi
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jndi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jndi.internal
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jndi.internal ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jta.platform.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jta.platform.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jta.platform.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jta.platform.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.spi
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.spi ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.transform
+    <require extend='false' filter='(&amp;(package=org.hibernate.transform)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.transform ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.component)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple.component
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.component)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple.component ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.entity)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple.entity
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.entity)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple.entity ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.type)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.type
+    <require extend='false' filter='(&amp;(package=org.hibernate.type)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.type ;version=[4.1.0,5.0.0)
     </require>
     <require extend='false' filter='(&amp;(package=org.jboss.logging)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.jboss.logging ;version=[3.1.0,4.0.0)
@@ -3858,7 +3873,7 @@
       Execution Environment (|(ee=J2SE-1.5)(ee=JavaSE-1.6))
     </require>
   </resource>
-  <resource id='javassist/3.15.0' presentationname='javassist' symbolicname='javassist' uri='javassist-3.15.0-GA.jar' version='3.15.0'>
+  <resource id='javassist/3.15.0' presentationname='javassist' symbolicname='javassist' uri='javassist-3.15.0.jar' version='3.15.0'>
     <size>
       655020
     </size>
@@ -5019,11 +5034,14 @@
       Aries top-level parent pom
     </description>
     <size>
-      39647
+      39454
     </size>
     <license>
       http://www.apache.org/licenses/LICENSE-2.0.txt
     </license>
+    <capability name='service'>
+      <p n='service' v='org.apache.aries.jpa.container.context.PersistenceContextProvider'/>
+    </capability>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
       <p n='presentationname' v='Aries JPA Container Managed Contexts'/>
@@ -5616,6 +5634,57 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.apache.commons.lang.time)(version&gt;=2.4.0))' multiple='false' name='package' optional='false'>
       Import package org.apache.commons.lang.time ;version=2.4.0
+    </require>
+  </resource>
+  <resource id='org.apache.felix.configadmin/1.2.8' presentationname='Apache Felix Configuration Admin Service' symbolicname='org.apache.felix.configadmin' uri='org.apache.felix.configadmin-1.2.8.jar' version='1.2.8'>
+    <description>
+      Implementation of the OSGi Configuration Admin Service Specification
+       1.2
+    </description>
+    <size>
+      94448
+    </size>
+    <license>
+      http://www.apache.org/licenses/LICENSE-2.0.txt
+    </license>
+    <documentation>
+      http://www.apache.org/
+    </documentation>
+    <category id='osgi'/>
+    <capability name='service'>
+      <p n='service' v='org.osgi.service.cm.ConfigurationAdmin'/>
+    </capability>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='Apache Felix Configuration Admin Service'/>
+      <p n='symbolicname' v='org.apache.felix.configadmin'/>
+      <p n='version' t='version' v='1.2.8'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.apache.felix.cm.file'/>
+      <p n='uses' v='org.apache.felix.cm,org.osgi.framework'/>
+      <p n='version' t='version' v='1.0.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.osgi.service.cm'/>
+      <p n='uses' v='org.osgi.framework'/>
+      <p n='version' t='version' v='1.3.0'/>
+    </capability>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.cm)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.cm ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.apache.felix.cm.file)(version&gt;=1.0.0)(!(version&gt;=1.1.0)))' multiple='false' name='package' optional='false'>
+      Import package org.apache.felix.cm.file ;version=[1.0.0,1.1.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.framework)(version&gt;=1.3.0))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.framework ;version=1.3.0
+    </require>
+    <require extend='false' filter='(&amp;(package=org.osgi.service.cm)(version&gt;=1.3.0)(!(version&gt;=1.4.0)))' multiple='false' name='package' optional='false'>
+      Import package org.osgi.service.cm ;version=[1.3.0,1.4.0)
     </require>
   </resource>
   <resource id='org.apache.servicemix.specs.jsr303-api-1.0.0/1.6.0' presentationname='Apache ServiceMix :: Specs :: JSR-303 API 1.0.0' symbolicname='org.apache.servicemix.specs.jsr303-api-1.0.0' uri='org.apache.servicemix.specs.jsr303-api-1.0.0-1.6.0.jar' version='1.6.0'>
