@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120414102232.595' name='justcloud'>
+<repository lastmodified='20120414105551.545' name='Untitled'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -1436,7 +1436,7 @@
   </resource>
   <resource id='hibernate-core/4.1.2' presentationname='hibernate-core' symbolicname='hibernate-core' uri='hibernate-core-4.1.2.jar' version='4.1.2'>
     <size>
-      4457924
+      4454618
     </size>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
@@ -1451,7 +1451,6 @@
     </capability>
     <capability name='package'>
       <p n='package' v='org.hibernate.metamodel.domain'/>
-      <p n='uses' v='org.hibernate.internal.util,org.hibernate.cfg,org.hibernate.service.classloading.spi'/>
       <p n='version' t='version' v='4.1.2'/>
     </capability>
     <capability name='package'>
@@ -2312,7 +2311,7 @@
     <require extend='false' filter='(&amp;(package=javax.security.auth)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.security.auth
     </require>
-    <require extend='false' filter='(&amp;(package=javax.security.jacc)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
+    <require extend='false' filter='(&amp;(package=javax.security.jacc)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.security.jacc
     </require>
     <require extend='false' filter='(&amp;(package=javax.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
@@ -2335,6 +2334,9 @@
     </require>
     <require extend='false' filter='(&amp;(package=javax.validation.metadata)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package javax.validation.metadata ;version=[1.0.0,2.0.0)
+    </require>
+    <require extend='false' filter='(&amp;(package=javax.xml.annotation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package javax.xml.annotation
     </require>
     <require extend='false' filter='(&amp;(package=javax.xml.bind)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.xml.bind
