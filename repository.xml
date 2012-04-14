@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120414100033.163' name='justcloud'>
+<repository lastmodified='20120414102232.595' name='justcloud'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -2546,7 +2546,7 @@
   </resource>
   <resource id='hibernate-entitymanager/4.1.2' presentationname='hibernate-entitymanager' symbolicname='hibernate-entitymanager' uri='hibernate-entitymanager-4.1.2.jar' version='4.1.2'>
     <size>
-      485419
+      485112
     </size>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
@@ -2679,8 +2679,8 @@
     <require extend='false' filter='(&amp;(package=org.dom4j)(version&gt;=1.6.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.dom4j ;version=[1.6.0,2.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate
     </require>
     <require extend='false' filter='(&amp;(package=org.hibernate.annotations.common)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.annotations.common ;version=[4.0.0,5.0.0)
@@ -2692,182 +2692,176 @@
     <require extend='false' filter='(&amp;(package=org.hibernate.annotations.common.util)(version&gt;=4.0.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.annotations.common.util ;version=[4.0.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.buildtime.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.buildtime.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.buildtime.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.buildtime.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.bytecode.instrumentation.internal
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.instrumentation.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.instrumentation.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.instrumentation.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.bytecode.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.bytecode.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.bytecode.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cache)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cache ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.cache)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cache
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.annotations.reflection)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg.annotations.reflection ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.annotations.reflection)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg.annotations.reflection
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.beanvalidation)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.cfg.beanvalidation ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.cfg.beanvalidation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.cfg.beanvalidation
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.collection.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.collection.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.collection.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.collection.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.dialect)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.dialect ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.dialect)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.dialect
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.dialect.lock)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.dialect.lock ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.dialect.lock)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.dialect.lock
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.loading.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.loading.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.loading.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.loading.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.query.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.query.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi.sql)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.query.spi.sql ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.query.spi.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.query.spi.sql
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jdbc)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jdbc)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.internal.jdbc
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jta)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.internal.jta)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.internal.jta
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.engine.transaction.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.engine.transaction.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.synchronization.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.engine.transaction.synchronization.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.engine.transaction.synchronization.spi
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.service.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.service.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.service.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.service.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.event.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.event.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.event.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.event.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.hql.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.hql.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.hql.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.hql.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.hql.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.hql.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.hql.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.hql.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.id)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.id ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.id)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.id
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.id.factory.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.id.factory.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.id.factory.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.id.factory.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.integrator.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.integrator.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.integrator.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.integrator.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.collections)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.collections ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.collections)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.collections
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.config)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.config ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.config)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.config
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.xml)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.internal.util.xml ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.internal.util.xml)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.internal.util.xml
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.mapping)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.mapping ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.mapping)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.mapping
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metadata)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metadata ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.metadata)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metadata
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.binding)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.binding ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.binding)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.binding
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.domain)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.domain ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.domain)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.domain
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.source ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.source
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source.binder)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.metamodel.source.binder ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.metamodel.source.binder)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.metamodel.source.binder
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.persister.collection)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.persister.collection ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.persister.collection)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.persister.collection
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.persister.entity)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.persister.entity ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.persister.entity)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.persister.entity
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.property)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.property ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.property)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.property
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.proxy)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.proxy ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.proxy)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.proxy
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.secure.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.secure.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.secure.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.secure.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.classloading.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.classloading.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.classloading.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.classloading.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.connections.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.connections.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.service.jdbc.connections.internal
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.dialect.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jdbc.dialect.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package org.hibernate.service.jdbc.dialect.internal
-       ;version=[4.1.0,5.0.0)
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jndi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jndi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi.internal)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jndi.internal ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jndi.internal)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jndi.internal
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.jta.platform.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.jta.platform.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.jta.platform.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.jta.platform.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.service.spi)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.service.spi ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.service.spi)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.service.spi
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.transform)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.transform ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.transform)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.transform
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.component)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple.component ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.component)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple.component
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.entity)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.tuple.entity ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.tuple.entity)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.tuple.entity
     </require>
-    <require extend='false' filter='(&amp;(package=org.hibernate.type)(version&gt;=4.1.0)(!(version&gt;=5.0.0)))' multiple='false' name='package' optional='false'>
-      Import package org.hibernate.type ;version=[4.1.0,5.0.0)
+    <require extend='false' filter='(&amp;(package=org.hibernate.type)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+      Import package org.hibernate.type
     </require>
     <require extend='false' filter='(&amp;(package=org.jboss.logging)(version&gt;=3.1.0)(!(version&gt;=4.0.0)))' multiple='false' name='package' optional='false'>
       Import package org.jboss.logging ;version=[3.1.0,4.0.0)
