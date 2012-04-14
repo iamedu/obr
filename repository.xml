@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120414121710.683' name='justcloud'>
+<repository lastmodified='20120414122651.303' name='Untitled'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -5832,6 +5832,51 @@
     </require>
     <require extend='false' filter='(&amp;(package=org.slf4j.spi)(version&gt;=1.6.0))' multiple='false' name='package' optional='true'>
       Import package org.slf4j.spi ;version=1.6.0
+    </require>
+  </resource>
+  <resource id='org.objectweb.asm.all/3.2.0' presentationname='ASM all classes' symbolicname='org.objectweb.asm.all' uri='asm-all-3.2.jar' version='3.2.0'>
+    <size>
+      203417
+    </size>
+    <documentation>
+      http://asm.objectweb.org
+    </documentation>
+    <capability name='bundle'>
+      <p n='manifestversion' v='2'/>
+      <p n='presentationname' v='ASM all classes'/>
+      <p n='symbolicname' v='org.objectweb.asm.all'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.signature'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.commons'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.tree'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.tree.analysis'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.util'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <capability name='package'>
+      <p n='package' v='org.objectweb.asm.xml'/>
+      <p n='version' t='version' v='3.2.0'/>
+    </capability>
+    <require extend='false' filter='(|(ee=J2SE-1.3))' multiple='false' name='ee' optional='false'>
+      Execution Environment (|(ee=J2SE-1.3))
     </require>
   </resource>
   <resource id='org.springframework.aop/3.0.6.RELEASE' presentationname='Spring AOP' symbolicname='org.springframework.aop' uri='org.springframework.aop-3.0.6.RELEASE.jar' version='3.0.6.RELEASE'>
