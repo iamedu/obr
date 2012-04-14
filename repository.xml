@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-stylesheet type='text/xsl' href='http://www.osgi.org/www/obr2html.xsl'?>
 
-<repository lastmodified='20120414093950.890' name='justcloud'>
+<repository lastmodified='20120414100033.163' name='justcloud'>
   <resource id='antlr/2.7.7' presentationname='antlr' symbolicname='antlr' uri='antlr-2.7.7.jar' version='2.7.7'>
     <size>
       445786
@@ -1436,7 +1436,7 @@
   </resource>
   <resource id='hibernate-core/4.1.2' presentationname='hibernate-core' symbolicname='hibernate-core' uri='hibernate-core-4.1.2.jar' version='4.1.2'>
     <size>
-      4457877
+      4457924
     </size>
     <capability name='bundle'>
       <p n='manifestversion' v='2'/>
@@ -2312,7 +2312,7 @@
     <require extend='false' filter='(&amp;(package=javax.security.auth)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.security.auth
     </require>
-    <require extend='false' filter='(&amp;(package=javax.security.jacc)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
+    <require extend='false' filter='(&amp;(package=javax.security.jacc)(version&gt;=0.0.0))' multiple='false' name='package' optional='true'>
       Import package javax.security.jacc
     </require>
     <require extend='false' filter='(&amp;(package=javax.sql)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
@@ -2335,9 +2335,6 @@
     </require>
     <require extend='false' filter='(&amp;(package=javax.validation.metadata)(version&gt;=1.0.0)(!(version&gt;=2.0.0)))' multiple='false' name='package' optional='false'>
       Import package javax.validation.metadata ;version=[1.0.0,2.0.0)
-    </require>
-    <require extend='false' filter='(&amp;(package=javax.xml.annotation)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
-      Import package javax.xml.annotation
     </require>
     <require extend='false' filter='(&amp;(package=javax.xml.bind)(version&gt;=0.0.0))' multiple='false' name='package' optional='false'>
       Import package javax.xml.bind
